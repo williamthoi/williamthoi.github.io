@@ -9,7 +9,7 @@ body {
 
 canvas {
   height: 100vh;
-  z-index: -10;
+  z-index: 0;
   position: fixed;
   top: 0px;
 }
@@ -63,6 +63,7 @@ canvas {
     margin-left: 0%;
   }
   .logo {
+    position: relative;
     margin-left: 25%;
   }
   .h1 {
@@ -70,12 +71,19 @@ canvas {
   }
 }
 
+.LI-profile-badge {
+  z-index: 20;
+  pointer-events: all;
+  position: relative;
+}
 
 .rounded {
   border-radius: 24px;
 }
 
 .logo {
+  position: relative;
+  z-index: 100;
   width: 40%;
 }
 
@@ -87,11 +95,13 @@ canvas {
 
 a {
   text-decoration: none;
-  text-decoration: none;
   transition: color 0.3s linear;
   -webkit-transition: color 0.3s linear;
   -moz-transition: color 0.3s linear;
-  color:#e8e9eb
+  color:#e8e9eb;
+  z-index: 20;
+  pointer-events: all;
+  position: relative;
 }
 
 a:hover {
