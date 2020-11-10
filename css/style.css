@@ -1,5 +1,4 @@
 body {
-  background: #2E0219;
   -webkit-font-smoothing: antialiased;
   font-family: 'Open Sans';
   margin-top: 7rem;
@@ -7,11 +6,16 @@ body {
   height: 100%;
 }
 
-canvas {
-  height: 100vh;
-  z-index: 0;
+#vanta {
   position: fixed;
-  top: 0px;
+  display: block;
+  min-width: 100%;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .center {
@@ -50,7 +54,7 @@ canvas {
     float: left;
     margin-left: 0%;
   }
-  
+
   .middle {
     width: 100.00%;
     float: left;
