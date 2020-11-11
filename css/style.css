@@ -1,9 +1,12 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Open Sans';
-  margin-top: 7rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
   height: 100%;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.0em;
 }
 
 #vanta {
@@ -34,18 +37,89 @@ body {
 
 .left{
   float: left;
-  width: 30.00%;
+  width: 28.00%;
   margin-left: 8.66666666667%;
 }
 
 .middle {
   text-align: left;
   width: 30.00%;
+  margin-left: 2.66666666667%;
 }
 
 .right {
   width: 25.00%;
   float: right;
+}
+
+p {
+  margin-top: 0; 
+  text-align: left;
+  color:#e8e9eb
+}
+
+.description {
+  font-size: 0.9em;
+}
+
+h1, h2, h3, h2, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+h1 {
+  line-height: 1.2;
+  letter-spacing: -.1rem;
+  text-align: left;
+  color: #e8e9eb;
+  font-size: 2.5em;
+}
+
+h2 {
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+  text-align: left;
+  color: #e8e9eb;
+  font-size: 1.5em;
+}
+
+.LI-profile-badge {
+  z-index: 20;
+  pointer-events: all;
+  position: relative;
+}
+
+.rounded {
+  border-radius: 24px;
+}
+
+.logo {
+  position: relative;
+  z-index: 100;
+  width: 40%;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s linear;
+  -webkit-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
+  color:#e8e9eb;
+  z-index: 20;
+  pointer-events: all;
+  position: relative;
+}
+
+a:hover {
+  color: #CCC4B2;
+}
+
+.fa,
+.fab,
+.fas,
+.far {
+  margin-right: .5em;
 }
 
 @media (max-width: 700px) {
@@ -75,52 +149,11 @@ body {
   }
 }
 
-.LI-profile-badge {
-  z-index: 20;
-  pointer-events: all;
-  position: relative;
-}
-
-.rounded {
-  border-radius: 24px;
-}
-
-.logo {
-  position: relative;
-  z-index: 100;
-  width: 40%;
-}
-
 @media (max-width: 550px) {
   .logo {
       width: 50%;
   }
-}
-
-a {
-  text-decoration: none;
-  transition: color 0.3s linear;
-  -webkit-transition: color 0.3s linear;
-  -moz-transition: color 0.3s linear;
-  color:#e8e9eb;
-  z-index: 20;
-  pointer-events: all;
-  position: relative;
-}
-
-a:hover {
-  color: #CCC4B2;
-}
-
-.fa,
-.fab,
-.fas,
-.far {
-  margin-right: .5em;
-}
-
-@media (min-width: 850px) {
-  .one-half-inception.column {
-      width: 48%;
+  .h2 {
+      font-size: 3rem;
   }
 }
