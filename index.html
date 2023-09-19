@@ -13,9 +13,6 @@
   <!-- Google AdSense -->
   <script data-ad-client="ca-pub-7462266286657280" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- #### VANTA JS PLUGIN ### -->
-  <!-- A. vanta js assets -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
-  <script src="https://www.vantajs.com/dist/vanta.waves.min.js"></script>
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
   <meta charset="utf-8">
   <title>William Thoi</title>
@@ -125,20 +122,22 @@
 <div id="vanta"></div>
 
 <!-- scripts -->
-<!-- B. Instilize vanta js by #id selector -->
+<!-- B. Initialize Vanta.js by #id selector -->
+<script src="three.r134.min.js"></script>
+<script src="vanta.waves.min.js"></script>
 <script>
-VANTA.WAVES({
-  el: "#vanta",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x000000,
-  shininess: 17.00
-})
-</script>
+  VANTA.WAVES({
+    el: "#vanta",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    waveSpeed: 0.55,
+    color: 0xc0f11
+  })
+  </script>
 </body>
 </html>
