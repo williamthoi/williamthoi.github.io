@@ -90,12 +90,6 @@ h3 {
   letter-spacing: -.08rem;
 }
 
-.LI-profile-badge {
-  z-index: 20;
-  pointer-events: all;
-  position: relative;
-}
-
 .rounded {
   border-radius: 50%;
 }
